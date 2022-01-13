@@ -25,4 +25,9 @@
  - Input di dati in applicazioni console mediante Scanner e/o Argomenti
  - Concatenazione di stringhe vs somma di interi
 
- 
+# Lezione del 13-01-2021
+ - Operatori logici
+ - Operatori di confronto
+ - Stringhe
+ - Array
+ - Introduzione matrici
