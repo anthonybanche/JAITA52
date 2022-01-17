@@ -1,0 +1,21 @@
+Esercizi sugli oggetti:
+
+Es1
+Questo esercizio è suddiviso in due parti:
+
+.Parte-1
+Scrivere un programma che costruisca un conto bancario e: 
+1 - versi in esso €1000, 
+2 - prelevi da esso €500,
+3 - prelevi altri €400 e infine visualizzi il saldo rimanente 
+
+
+.Parte-2
+Con lo stesso oggetto "ContoBanca" creato in precedenza, creare almeno 3 conti diversi e stampare a video la media.
+
+
+Es2
+- Creare una classe Persona con le proprietà fondamentali di una persona (es: Nome, Cognome, Età, ecc...)
+- Creare un metodo in Persona che restituisca le informazioni sulla persona in questione chiamandolo "dettaglio"
+- Creare una classe Dipendente che faccia riferimento a Persona aggiungendo un metodo ed una proprietà relativa al salario annuale del Dipendente, infine creare un metodo che permetta di
+incrementare lo stipendio di una determinata percentuale in input
