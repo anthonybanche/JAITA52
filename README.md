@@ -46,3 +46,10 @@ https://drive.google.com/file/d/1LxQ7eUvNNi3-SVQP58wU2p2f-gFoRqvf/view?usp=shari
  - Ripasso Stringhe https://www.html.it/pag/50644/stringhe-in-java/
  - ArrayList http://www.unife.it/ing/informazione/fond-info-2/lucidi-sul-linguuaggio-java/lucidi-lezioni-java-in-laboratorio/esempi-ed-esercizi-su-arraylist
  - Console application MVC
+
+# Lezione del 25-01-2021 (Banche + Muscio)
+WAIT4IT
+ - Ripasso eccezioni, con spiegazioni di casi d'uso
+ - MVC per Console Application
+ - Revisione eserciziario
+ - Dubbi su utilizzo pratico extends
