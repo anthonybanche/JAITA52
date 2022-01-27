@@ -48,8 +48,15 @@ https://drive.google.com/file/d/1LxQ7eUvNNi3-SVQP58wU2p2f-gFoRqvf/view?usp=shari
  - Console application MVC
 
 # Lezione del 25-01-2021 (Banche + Muscio)
-WAIT4IT
+https://drive.google.com/file/d/1RzrUbVuJCfy5uExJvsdPF_LYg12i2dL7/view?usp=sharing
  - Ripasso eccezioni, con spiegazioni di casi d'uso
  - MVC per Console Application
  - Revisione eserciziario
  - Dubbi su utilizzo pratico extends
+
+# Lezione del 27-01-2021 (Banche + Muscio)
+WAIT4IT
+ - Request e Response (modello client-server)
+ - Introduzione al protocollo HTTP
+ - JSP(View), Servlet(Controller) e Form(ViewModel)
+ - Spazio per domande su esercizi o prove
