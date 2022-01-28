@@ -55,8 +55,14 @@ https://drive.google.com/file/d/1RzrUbVuJCfy5uExJvsdPF_LYg12i2dL7/view?usp=shari
  - Dubbi su utilizzo pratico extends
 
 # Lezione del 27-01-2021 (Banche + Muscio)
-WAIT4IT
- - Request e Response (modello client-server)
+https://drive.google.com/file/d/1oHrOBokNWWqKWupxNqzWc_Kvl2OgxljF/view?usp=sharing
+https://drive.google.com/file/d/1_JzIfBF_6a8vsfxIg4gIROzcfOC7Vyji/view?usp=sharing
+ - Ripasso eccezioni e MVC
+ - Introduzione Request e Response (modello client-server)
  - Introduzione al protocollo HTTP
- - JSP(View), Servlet(Controller) e Form(ViewModel)
  - Spazio per domande su esercizi o prove
+
+ # Lezione del 28-01-2021 (Banche)
+WAIT4IT
+ - Revisione globale esercizi calcolatrice (MVC, OOP, EXC)
+
