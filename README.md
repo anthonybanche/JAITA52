@@ -63,6 +63,19 @@ https://drive.google.com/file/d/1_JzIfBF_6a8vsfxIg4gIROzcfOC7Vyji/view?usp=shari
  - Spazio per domande su esercizi o prove
 
  # Lezione del 28-01-2021 (Banche)
-WAIT4IT
- - Revisione globale esercizi calcolatrice (MVC, OOP, EXC)
+https://drive.google.com/file/d/18is4ZNfO0fdBi2EswJaKne1EqemTKTa4/view?usp=sharing
+ - Revisione calcolatrice
+
+ # Lezione del 31-01-2021 (Muscio)
+https://drive.google.com/file/d/1H7EY99SR5beIw72_ZC1lQhwHDk3YvWO2/view?usp=sharing
+https://drive.google.com/file/d/1bixE4RYzy-4vZNB5kfG0yh_shk-5HmMr/view?usp=sharing
+
+ # Lezione del 01-02-2021 (Muscio)
+ https://drive.google.com/file/d/19MUtxQV0ZECB8mBwto-txnCknsieVq2y/view?usp=sharing
+ 
+ # Lezione del 02-03-2021 (Muscio)
+ https://drive.google.com/file/d/14xgfBGf14TUWgUBHfRlauVoHLfkQxKKF/view?usp=sharing
+ https://drive.google.com/file/d/11ZOLNTyKAtagzbKGpZfDva9uVHKWpp8M/view?usp=sharing
+ 
+
 
