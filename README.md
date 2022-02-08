@@ -78,4 +78,6 @@ https://drive.google.com/file/d/1bixE4RYzy-4vZNB5kfG0yh_shk-5HmMr/view?usp=shari
  https://drive.google.com/file/d/11ZOLNTyKAtagzbKGpZfDva9uVHKWpp8M/view?usp=sharing
  
 
-
+# Lezione del 07-02-2022 (Banche)
+ https://drive.google.com/file/d/1kDa13043CtLghVXA77AhRlU7HBCkxNQj/view?usp=sharing
+ - Java Servlet + JDBC select
