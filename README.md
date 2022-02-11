@@ -81,3 +81,12 @@ https://drive.google.com/file/d/1bixE4RYzy-4vZNB5kfG0yh_shk-5HmMr/view?usp=shari
 # Lezione del 07-02-2022 (Banche)
  https://drive.google.com/file/d/1kDa13043CtLghVXA77AhRlU7HBCkxNQj/view?usp=sharing
  - Java Servlet + JDBC select
+
+# Lezione del 08-02-2022 (Banche)
+https://drive.google.com/file/d/1mmi6pXnQhofAMCas0-SUybjUxGHEcwLu/view?usp=sharing
+ - Servlet con controller e repo per SELECT UPDATE e DELETE
+
+# Lezione del 10-02-2022 (Muscio)
+https://drive.google.com/file/d/16Dzp5Q2CpboP8TQ63yv5J0Lyc8h9c7go/view?usp=sharing
+ - Approfondimento e ripasso
+
