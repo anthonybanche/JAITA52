@@ -90,3 +90,10 @@ https://drive.google.com/file/d/1mmi6pXnQhofAMCas0-SUybjUxGHEcwLu/view?usp=shari
 https://drive.google.com/file/d/16Dzp5Q2CpboP8TQ63yv5J0Lyc8h9c7go/view?usp=sharing
  - Approfondimento e ripasso
 
+# Lezione del 16-02-2022 (Banche)
+
+ - POM e dipendenze
+ - Spring MVC e form per inserimento/modifica su falso DB
+ - Stereotipi e DependencyInjection
+ 
+
