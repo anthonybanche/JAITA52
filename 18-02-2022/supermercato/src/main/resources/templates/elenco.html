@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${titolo}">Insert title here</title>
+</head>
+<body>
+
+	<h1 th:text="${titolo}"></h1>
+
+
+<h2 th:if="${canzoni} != null">Lista Canzoni</h2>
+<form action="#" th:action="@{/canzoni/editCanzone}" method="post">
+	<table th:if="${canzoni} != null">
+	  <tr>
+	    <th>id</th>
+	    <th>titolo</th>
+	    <th>autore</th>
+	    <th>compositore</th>
+	  </tr>
+	  <tr th:each="canzone : ${canzoni}">
+	    <td th:text="${canzone.id}">Row 1: Col 1 </td>
+	    <td th:text="${canzone.titolo}">Row 1: Col 2</td>
+	    <td th:text="${canzone.autore}">Row 1: Col 3</td>
+	    <td th:text="${canzone.compositore}">Row 1: Col 4</td>
+	    <td> <input type="submit" name="idDaModificare" th:value="${canzone.id}"> </td>
+	  </tr>
+	</table>
+</form>
+
+
+<h2 th:if="!${isUpdate}">Inserisci canzone</h2>
+<h2 th:if="${isUpdate}">Modifica canzone</h2>
+<form action="#" th:action="@{/canzoni/saveCanzone}" th:object="${newCanzone}" method="post">
+	<p> Id: <input type="text" th:field="${newCanzone.id}" /> </p>
+	<p> Titolo: <input type="text" th:field="${newCanzone.titolo}" /> </p>
+	<p> Autore: <input type="text" th:field="${newCanzone.autore}" /> </p>
+	<p> Compositore: <input type="text" th:field="${newCanzone.compositore}" /> </p>
+	<input type="hidden" th:value="${isUpdate}" name="isUpdate">
+	<p> <input type="submit" value="Aggiungi">
+</form>
+
+
+
+</body>
+</html>
