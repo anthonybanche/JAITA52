@@ -1,4 +1,4 @@
-package com.maboglia.canzoni;
+package com.nicassio.canzoni;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
