@@ -16,7 +16,7 @@ public class UtentiService {
 	
 	public Utente login(Utente ut) throws Exception {
 		
-		List<Utente> lista = db.getAll();
+		List<Utente> lista = db.findAll();
 		
 		for (Utente utente : lista) {
 			
@@ -33,6 +33,10 @@ public class UtentiService {
 		
 		throw new Exception("Credenziali errate.");
 		
+	}
+
+	public void registraUtente(Utente input){
+		db.save(input);
 	}
 
 }

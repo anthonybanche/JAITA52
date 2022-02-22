@@ -9,6 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import org.springframework.context.annotation.Scope;
 
@@ -28,6 +29,8 @@ public class Utente {
 	private String indirizzo;
 	private String email;
 	private String password;
+
+	@Transient // -> Serve per dire a spring data di ignorare questo campo
 	private List<Prodotto> carrello;
 	
 	public Utente() {}
