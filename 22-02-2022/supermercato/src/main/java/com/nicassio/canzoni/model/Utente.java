@@ -22,12 +22,18 @@ public class Utente {
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // -> Serve per dire che è AUTO INCREMENT
 	private int id;
 
-	@Column(name="name") // -> Serve per impostare il nome corrispondente al campo sul database
+	@Column(name="name", length = 20, nullable = false) // -> Serve per impostare il nome corrispondente al campo sul database
 	private String nome;
 
+	@Column(name="surname", length = 20, nullable = false)
 	private String cognome;
+
+	@Column(name="address", length = 20, nullable = false)
 	private String indirizzo;
+
+	@Column(name="email", length = 20, nullable = false)
 	private String email;
+
 	private String password;
 
 	@Transient // -> Serve per dire a spring data di ignorare questo campo
@@ -35,8 +41,7 @@ public class Utente {
 	
 	public Utente() {}
 
-	public Utente(int id, String nome, String cognome, String indirizzo, String email, String password) {
-		this.id = id;
+	public Utente(String nome, String cognome, String indirizzo, String email, String password) {
 		this.nome = nome;
 		this.cognome = cognome;
 		this.indirizzo = indirizzo;
