@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link th:replace="fragments/css">
+
+</head>
+<body>
+	<div class="container">
+		<div th:replace="menu.html"></div>
+
+		<table class="table table-hover">
+			<thead>
+			<tr>
+				<th>id</th>
+				<th>Nome</th>
+				<th>Reparto</th>
+				<th>Prezzo</th>
+				<th>Azioni</th>
+			</tr>
+			</thead>
+			<tbody id="carrello"></tbody>
+		</table>
+
+	</div>
+	<div th:replace="fragments/js"></div>
+	<script src="js/carrello.js"></script>
+
+</body>
+</html>

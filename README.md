@@ -91,9 +91,20 @@ https://drive.google.com/file/d/16Dzp5Q2CpboP8TQ63yv5J0Lyc8h9c7go/view?usp=shari
  - Approfondimento e ripasso
 
 # Lezione del 16-02-2022 (Banche)
-
+https://drive.google.com/file/d/1cZDufLz1f2AhAnfXhSBoRXzdJQLXbNw7/view?usp=sharing
  - POM e dipendenze
  - Spring MVC e form per inserimento/modifica su falso DB
  - Stereotipi e DependencyInjection
  
-
+# Lezione del 17-02-2022 (Banche)
+https://drive.google.com/file/d/1czyB1v3mI0phiWyBhqgzx4xzyleuA1tP/view?usp=sharing
+ - Spring MVC e REST
+ 
+# Lezione del 18-02-2022 (Banche)
+https://drive.google.com/file/d/1qXRmIp3T5X4mxvSoKOD2OFPpdgDZSGUZ/view?usp=sharing
+ - Progetto del supermercato con MVC e REST
+ 
+# Lezione del 21-02-2022 (Muscio)
+https://drive.google.com/file/d/1JzxYnC_dA55Xie5Ng8hemytW1b24R3Es/view?usp=sharing
+ - Finito progetto suoermercato
+ - Cenni di bootstrap
