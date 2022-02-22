@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1 th:text="${titolo}">Elenco canzoni</h1>
+	<!-- Thymeleaf text come attributo che sovrascriverà il contenuto del tag 1 alla ricezione del dato dal controller -->
+
+<h2 th:if="${canzoni} != null">Lista canzoni</h2>
+<!-- <form action="#" th:action="@{/canzoni/editCanzone}" method="post">  -->
+<table id="tabellaCanzoni" th:if="${canzoni} != null">
+  <tr>
+    <th>id</th>
+    <th>titolo</th>
+    <th>autore</th>
+    <th>compositore</th>
+    <th>azioni</th>
+  </tr>
+<!--  <tr th:each="canzone : ${canzoni}">
+    <td th:text="${canzone.id}"> </td>
+    <td th:text="${canzone.titolo}"></td>
+    <td th:text="${canzone.autore}"></td>
+    <td th:text="${canzone.compositore}"></td>
+    <td><input type="submit" name="idDaModificare" th:value="${canzone.id}"></td>
+  </tr>
+ --> 
+</table>
+<!-- </form> -->
+
+<h2 th:if="!${isUpdate}">Inserisci canzone</h2>
+<h2 th:if="${isUpdate}">Modifica canzone</h2>
+<form action="#" th:action="@{/canzoni/saveCanzone}" th:object="${newCanzone}" method="post">
+	<p> Id: <input type="number" th:field="${newCanzone.id}"/></p>
+	<p> Titolo: <input type="text" th:field="${newCanzone.titolo}"/></p>
+	<p> Autore: <input type="text" th:field="${newCanzone.autore}"/></p>
+	<p> Compositore: <input type="text" th:field="${newCanzone.compositore}"/></p>
+	<input id="isUpdate" type="hidden" th:value="${isUpdate}" name="isUpdate" onclick="saveCanzone(true)">
+	<p> <input type="submit" value="Aggiungi" onclick="saveCanzone(false)"> </p>
+</form>
+
+<button onclick="saveCanzone()">Salva REST</button>
+
+<button onclick="test()">Test Click</button>
+
+<script>
+	
+	window.onload = test(); //Al caricamento della finestra la funziona test() viene richiamata
+	
+	function test(){
+		
+		let tabella = document.getElementById("tabellaCanzoni");
+		
+		if(tabella) {
+		
+			fetch("http://localhost:8080/api/canzoni")
+				.then(response => response.json())
+				.then(data => {
+					
+					for(let canzone of data){
+						
+						let tr = document.createElement("tr");
+						tr.innerHTML =  '<td>' + canzone.id + '</td>' +
+							 			'<td>' + canzone.titolo + '</td>' +
+										'<td>' + canzone.compositore + '</td>' +
+										'<td>' + canzone.autore + '</td>' +
+										'<td><button onclick="deleteCanzone(' + canzone.id + ')">Cancella</button></td>' +
+										'<td><button onclick="getCanzone(' + canzone.id + ')">Aggiorna</button></td>'
+						tabella.appendChild(tr);
+					}
+					
+				})
+				.catch(error => {
+					alert("Si e' verificato un errore");
+				})
+		}
+		
+	}
+	
+	
+	
+	function saveCanzone(){
+	
+		var isUpdate = document.getElementById('isUpdate').value;
+		
+		fetch("http://localhost:8080/api/saveCanzone?isUpdate=" + isUpdate, {
+			method: "POST",
+			headers: new Headers({ "Content-Type" : "application/json" }),
+			body: JSON.stringify(
+				{
+					id: document.getElementById('id').value,
+					titolo: document.getElementById('titolo').value,
+					autore: document.getElementById('autore').value,
+					compositore: document.getElementById('compositore').value
+				}		
+			)
+		
+		}).then(response => {
+			if(isUpdate){
+				document.location.href = "http://localhost:8080/canzoni"
+			} else {
+				location.reload()
+			}
+		})
+	}
+	
+	function deleteCanzone(id) {
+		fetch("http://localhost:8080/api/deleteCanzone?id=" + id, {
+			method: "DELETE"
+		})
+		.then(response => location.reload())
+		.catch(errore => {
+			alert(errore);
+		})
+		
+	}
+	
+	function getCanzone(id) {
+		debugger;
+		fetch("http://localhost:8080/api/getCanzone/" + id, {
+			method: "GET"
+		})
+		.then(response => response.json())
+		.then(canzone => {
+			document.getElementById('id').value = canzone.id,
+			document.getElementById('titolo').value = canzone.titolo,
+			document.getElementById('autore').value = canzone.autore,
+			document.getElementById('compositore').value = canzone.compositore,
+			document.getElementById('isUpdate').value = 'true'
+		})
+	}
+	
+	
+</script>
+
+
+</body>
+</html>
