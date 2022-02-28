@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+	<h1 th:text="${titolo}"></h1>
+	<!-- Thymeleaf text come attributo che sovrascriverà il contenuto del tag 1 alla ricezione del dato dal controller -->
+
+	<form action="#" th:action="@{/registrazione/registra-utente}" th:object="${formUtente}" method="post">
+	    <p> Nome: <input type="text" th:field="${formUtente.nome}"/></p>
+	    <p> Cognome: <input type="text" th:field="${formUtente.cognome}"/></p>
+	    <p> Indirizzo: <input type="text" th:field="${formUtente.indirizzo}"/></p>
+		<p> Email: <input type="email" th:field="${formUtente.email}"/></p>
+		<p> Password: <input type="password" th:field="${formUtente.password}"/></p>
+		<p><input type="submit" value="Aggiungi"></p>
+	</form>
+	<a href="login">Torna a Login</a>
+	
+	<h2 th:text="${errore}" style="border: 2px solid black; background-color: red; color: white"></h2>
+
+</body>
+</html>

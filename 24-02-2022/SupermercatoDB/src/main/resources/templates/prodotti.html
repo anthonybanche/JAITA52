@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link th:replace="fragments/css">
+</head>
+<body>
+
+<div th:replace="menu.html" ></div>
+	
+	<h1 th:text="${titolo}"></h1>
+<table id="tabellaProdotti"  th:if="${prodotti} != null">
+  <tr>
+    <th>id</th>
+    <th>nome</th>
+    <th>reparto</th>
+    <th>prezzo</th>
+    <th>azioni</th>
+  </tr>
+    <tr th:each="prodotto : ${prodotti}">
+	    <td th:text="${prodotto.id}"> </td>
+	    <td th:text="${prodotto.nome}"></td>
+	    <td th:text="${prodotto.reparto}"></td>
+	    <td th:text="${prodotto.prezzo}"></td>
+	    <td><button th:onclick="'addProdotto('+${prodotto.id}+')'">Aggiungi</button></td>
+	</tr>
+</table>
+
+<p th:if="${utente.nome != null}">Benvenuto <span th:text="${utente.nome + ' ' + utente.cognome}"></span></p>
+
+
+<script type="text/javascript">
+
+function addProdotto(id) {
+	fetch("http://localhost:8080/api/aggiungiProdotto?id=" + id, {
+		method: "Post"
+	})
+	
+	.then(data=> alert(data))
+	.catch(errore => {
+		alert(errore);
+	})
+	
+}
+function gotoCarrello() {
+	
+	window.location.href="http://localhost:8080/carrello"
+	
+}
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
